@@ -64,14 +64,17 @@ php artisan storage:link
 | DELETE | `/articles/{article}` | destroy | Supprime un article |
 
 ### Routes Authentifiées (`auth`)
-| Méthode | URI | Action | Description |
-|---------|-----|--------|-------------|
-| GET | `/articles/create` | create | Formulaire de création |
-| POST | `/articles` | store | Crée un article |
-| POST | `/articles/{article}/like` | like | Like/Unlike un article |
-| POST | `/articles/{article}/comments` | store | Ajoute un commentaire |
-| DELETE | `/comments/{comment}` | destroy | Supprime un commentaire |
-| GET | `/profile` | show | Affiche le profil de l'utilisateur |
+| Méthode | URI                            | Action       | Description                                         |
+|---------|--------------------------------|--------------|-----------------------------------------------------|
+| GET | `/articles/create`             | create       | Formulaire de création                              |
+| POST | `/articles`                    | store        | Crée un article                                     |
+| POST | `/articles/{article}/like`     | like         | Like/Unlike un article                              |
+| POST | `/articles/{article}/comments` | store        | Ajoute un commentaire                               |
+| DELETE | `/comments/{comment}`          | destroy      | Supprime un commentaire                             |
+| GET | `/profile`                     | show         | Affiche le profil de l'utilisateur                  |
+| PUT | `/profile`                     | update       | Met à jour le profil de l'utilisateur               |
+| GET | `/profile/edit`                | edit         | Modifie les informations du profil de l'utilisateur |
+| PUT | `/profile/avatar`              | updateAvatar | Met à jour la photo de profil de l'utilisateur      |
 | POST | `/logout` | logout | Déconnexion |
 
 ### Routes Invités (`guest`)
